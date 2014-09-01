@@ -3,9 +3,7 @@ use strict;
 use warnings;
 use File::Fetch;
 
-my $domain = 'public.boopsie.com';
-#my $url = 'http://public.boopsie.com/_test/boopsie_test.tsv';
-my $url = 'http://kallisti.sacredchao.us/_test/boopsie_test.tsv';
+my $url = 'http://public.boopsie.com/_test/boopsie_test.tsv';
 my $path = '_test/boopsie_test.tsv';
 my $dir = glob('/tmp/boopsie_challenge');
 
