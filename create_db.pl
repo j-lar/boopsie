@@ -37,3 +37,4 @@ $dbh -> do("LOAD DATA INFILE '$file'
 		   IGNORE 1 LINES
 		   ($schema[0], $schema[1], $schema[2], $schema[3], $schema[4]);"
 		  );
+`mysqldump -u$user -p'$password' $database > /tmp/boopsie_challenge/boopsie_test.sql`
