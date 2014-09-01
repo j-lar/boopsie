@@ -28,16 +28,3 @@ $dbh -> do("CREATE DATABASE `$database`;");
 $dbh = DBI -> connect("dbi:mysql:dbname=$database:$host",$user,$password);
 $dbh -> do("CREATE TABLE info ($schema[0] VARCHAR(256), $schema[1] VARCHAR(256), $schema[2] VARCHAR(8), $schema[3] VARCHAR(10), $schema[4] VARCHAR(256));");
 
-#import from boopsie_test.tsv into db
-open (FILE, $file)
-  or die "Could not open $file $!";
-
-my @data = {};
-while (<FILE>) {
-  chomp;
-  my @data = split("\t");
-}
-
-for my $data (@data) {
-  print $data . "\n";
-}
