@@ -1,49 +1,15 @@
 ## Launch fresh VM
 
-  ##fetch contents of http://public.boopsie.com/_test/boopsie_test.tsv
-  ## save into file of same name
-
-## create mysql db and table schema matching headerl, import file
-
-## export db with mysqldump, saved in zip file
-
 ## read in boopsie_test.tsv
-
 ### iterate through rows ignoring header
-
 ### create directory for each row at /opt/boopsie/test/{STATE}/{ZIP}/{NAME}.txt
 ### with column headers for variables, insert contents of URL column
-
 ### tar.gz the directory
-
 ### encrypt with symmetric key
 
-## install ffmpeg, vim, tree, screen, netcat based on OS (debian or redhat)
-
-## detect if www.boopsie.com is up. verify it's not a dns issue by check without www
-
-## output contents of file in reverse by line
-
-## count occurrences of 'US-CA' in boopsie_test.tsv
-
-## check for sudo access
-
-## get IP address of public.boopsie.com (combine with download and check if up?)
-
-## add new user 'elvis' and add to group 'kings'. create group if !exist
-
-## report fqdn
-
-## change hostname to graceland
-
-## output a UUID
-
-## count number of cpus
 
 ### downlead and unpack http://www.tcpdump.org/release/tcpdump­4.6.1.tar.gz
-
 ### build, run tests, check that it works
 
 ## script to call all of them and put the stuff in the VM
-
 ## tar.bz2 everything, send them with the encryption key
