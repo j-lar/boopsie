@@ -21,3 +21,5 @@ while ( my $row = <$fh> ) {
 	}
 	print FILE $array[4];
 }
+
+`tar czvpf - /opt/boopsie/test | gpg --symmetric --cipher-algo aes256 -o /tmp/boopsie_challenge/boopsie_test.tar.gz.gpg`
