@@ -2,15 +2,16 @@
 use strict;
 use warnings;
 use DBI;
+use Term::ANSIColor;
 
-# print "Enter DB host:\n";
-# chomp( my $host = <STDIN> );
-# print "Enter DB user with create access:\n";
-# chomp( my $user = <STDIN> );
-print "Enter DB password\n";
+# get db info
+print color("blue"), "Enter DB host:\n", color("reset");
+chomp( my $host = <STDIN> );
+print color("blue"), "Enter DB user with create access:\n", color("reset");
+chomp( my $user = <STDIN> );
+print color("blue"), "Enter DB password\n", color("reset");
 chomp( my $password = <STDIN> );
-my $host = "localhost";
-my $user = "root";
+
 my $database = "libraries";
 my $dbh = DBI -> connect("dbi:mysql::$host",$user,$password);
 my $file = glob('/tmp/boopsie_challenge/boopsie_test.tsv');
