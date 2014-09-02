@@ -1,3 +1,0 @@
-## Launch fresh VM
-
-## tar.bz2 everything, send them with the encryption key
