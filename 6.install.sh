@@ -1,6 +1,6 @@
 #!/bin/bash
-rh = "yum -y install ffmpeg, vim, tree, screen, netcat"
-deb = "apt-get -y install ffmpeg, vim, tree, screen, netcat"
+rh="sudo yum -y install ffmpeg vim tree screen netcat"
+deb="sudo apt-get -y install ffmpeg vim tree screen netcat"
 
 ## install ffmpeg, vim, tree, screen, netcat based on OS (debian or redhat)
 echo "Checking distro family..."
