@@ -1,7 +1,3 @@
 ## Launch fresh VM
 
-
-### downlead and unpack http://www.tcpdump.org/release/tcpdump­4.6.1.tar.gz
-### build, run tests, check that it works
-
 ## tar.bz2 everything, send them with the encryption key
